@@ -8,4 +8,7 @@ def home(request):
     return HttpResponse("<h1>Welcome to homepage<h1>")
 
 def html_demo1(request):
-        return render(request,"sample.html")
+        return render(request,"first.html")
+
+def html_demo2(request):
+        return render(request,"directory/second.html")
