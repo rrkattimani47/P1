@@ -19,3 +19,6 @@ def html_third(request):
 def html_fourth(request):
     fruits=['apple','strawberry','banana','mango','watermelon','orange','kiwi']
     return render(request,"directory/fourth.html",{'fruits':fruits})
+
+def html_fifth(request):
+    return render(request,"directory/fifth.html",{'a':10,'b':99})
