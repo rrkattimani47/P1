@@ -15,3 +15,7 @@ def html_demo2(request):
 
 def html_third(request):
     return render(request,"directory/third.html",context={'data':"Rashmi",'name':'Ritu'})
+
+def html_fourth(request):
+    fruits=['apple','strawberry','banana','mango','watermelon','orange','kiwi']
+    return render(request,"directory/fourth.html",{'fruits':fruits})
