@@ -12,3 +12,6 @@ def html_demo1(request):
 
 def html_demo2(request):
         return render(request,"directory/second.html")
+
+def html_third(request):
+    return render(request,"directory/third.html",context={'data':"Rashmi",'name':'Ritu'})
