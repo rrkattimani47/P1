@@ -22,3 +22,15 @@ def html_fourth(request):
 
 def html_fifth(request):
     return render(request,"directory/fifth.html",{'a':10,'b':99})
+
+def urls_data(request,name):
+    return HttpResponse("<h1>{}</h1>".format(name))
+
+def xy(request,xy):
+    z=xy.split(" ")
+    sum=int(z[0])+ int(z[1])
+    return HttpResponse(str(sum))
+
+def ab(request,a,b):
+    sum=int(a)+int(b)
+    return HttpResponse(str(sum))
