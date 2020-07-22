@@ -29,4 +29,7 @@ urlpatterns = [
     path("urls_data/<name>",views.urls_data,name="urls_data"),
     path("xy/<xy>",views.xy,name="xy"),
     path("ab/<a>/<b>",views.ab,name="ab"),
+    path('greater/<c>/<d>/<e>',views.greater,name="greater"),
+ 
+    
 ]
